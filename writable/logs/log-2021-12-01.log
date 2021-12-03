@@ -1,0 +1,14 @@
+CRITICAL - 2021-12-01 14:07:13 --> Invalid file: templates/includes/right-side-menu.php
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/inclu...')
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\View\View.php(432): CodeIgniter\View\View->render('templates/inclu...', NULL, true)
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\app\Views\pages\home.php(5): CodeIgniter\View\View->include('templates/inclu...')
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\WEB SERVICES...')
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('pages/home', Array, true)
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\app\Controllers\Pages.php(12): view('pages/home', Array)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pages->home()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 D:\WEB SERVICES\WORKPLACE\CodeIgniter\jayblagroup_CI4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#12 {main}
