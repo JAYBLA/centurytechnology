@@ -34,12 +34,16 @@ $routes->setAutoRoute(true);
 
 $routes->get('/', 'Pages::home');
 $routes->get('/graphic-design', 'Pages::graphic_design');
-$routes->get('/tshirt-printing', 'Pages::tshirt_printing');
-$routes->get('/2D&3D-Signages', 'Pages::signages');
-$routes->get('/promotional-materials', 'Pages::promotional_materials');
+$routes->get('/alarm-systems', 'Pages::alarm');
+$routes->get('/electrical-fence', 'Pages::electrical');
+$routes->get('/computer-maintenence', 'Pages::computer');
+$routes->get('/biometric-systems', 'Pages::biometric');
+$routes->get('/it-support', 'Pages::it_support');
+$routes->get('/web-design', 'Pages::web_design');
+$routes->get('/cloud-services', 'Pages::cloud');
+$routes->get('/network-installation', 'Pages::network');
 $routes->get('contact', 'Contact::index');
-$routes->get('news/create', 'News::create');
-$routes->get('news', 'News::index');
+
 
 
 $routes->get('admin', 'Dashboard::index');

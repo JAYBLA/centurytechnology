@@ -84,7 +84,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <a class="nav-link" href="/">
                                             Home
                                         </a>
                                     </li>
@@ -96,13 +96,13 @@
                                         <div class="dropdown-menu" aria-labelledby="serviceDropdown">
                                             <a class="dropdown-item" href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a>
 											<a class="dropdown-item" href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a>
-											<a class="dropdown-item" href="<?= base_url('/electrical-fence') ?>">Electrical Fence and Motor Gates</a>
-											<a class="dropdown-item" href="<?= base_url('/computer-maintenence') ?>">Computer Maintenence and Repair</a>
+											<a class="dropdown-item" href="<?= base_url('/electrical-fence') ?>">Electrical Fence </br> and Motor Gates</a>
+											<a class="dropdown-item" href="<?= base_url('/computer-maintenence') ?>">Computer Maintenence </br> and Repair</a>
 											<a class="dropdown-item" href="<?= base_url('/it-support') ?>">IT Support</a>
 											<a class="dropdown-item" href="<?= base_url('/web-design') ?>">Web Design and Hosting</a>
 											<a class="dropdown-item" href="<?= base_url('/graphic-design') ?>">Graphic Design</a>
 											<a class="dropdown-item" href="<?= base_url('/cloud-services') ?>">Cloud Services</a>
-											<a class="dropdown-item" href="<?= base_url('/') ?>">Network Installation and Services</a>
+											<a class="dropdown-item" href="<?= base_url('/network-installation') ?>">Network Installation </br> and Services</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -227,7 +227,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6 col-md-6">
-                        <p>Copyright &copy; Montion 2021, All Right Reserved</p>
+                        <p>&copy; Century <script>document.write(new Date().getFullYear())</script>, All Right Reserved || Developed by <a target="_blank" href="https://bafrocodes.co.tz" style="color:#e62327;">BafroCodes</a></p>
                     </div>
                 </div>
             </div>

@@ -101,10 +101,34 @@
         width: 100%;
     }
 }
+.page-nav-vertical{
+    list-style: none;
+    margin-top: 5%;
+}
+.page-nav-vertical li{
+    margin-bottom: 8px;
+}
+.page-nav-vertical li a {
+    display: block;
+    border: 2px solid #e62327;
+    padding: 16px 18px;
+    transition: all .5s ease;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #444;
+    position: relative;
+}
 
-/* .page-margin{
-    margin-top: 15% !important;
-} */
+.page-nav-vertical .active{    
+    background-color:  #e62327;
+}
+
+.page-nav-vertical .active a {
+    color: #fff;
+   
+}
 
 
 

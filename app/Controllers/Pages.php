@@ -30,7 +30,7 @@ class Pages extends Controller
         echo view('pages/alarm', $data);       
     }
 
-    public function electrical_fence()
+    public function electrical()
     {
         $data['title'] = "Electrical Fences";
         echo view('pages/electrical', $data);       

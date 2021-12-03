@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-8 col-md-7">
                         <div class="banner-txt">
-                            <h1>Stand your <span>dream</span> building with <span>montion</span> construction.</h1>
+                            <h1>Stand your <span>dream</span> building with <span>century</span> construction.</h1>
                             <p>Lorem Ipsum is simply dmmy and text the printing & typeseng staard dummy text ever since
                                 the when unknown.</p>
                             <a href="service.html" class="def-btn">All Services <i class="icofont-double-right"></i></a>
@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-8 col-md-7">
                         <div class="banner-txt">
-                            <h1><span>Montion</span> are pro in their <span>passion</span> so you can just leave it on
+                            <h1><span>Century</span> are pro in their <span>passion</span> so you can just leave it on
                                 us.</h1>
                             <p>Lorem Ipsum is simply dmmy and text the printing & typeseng staard dummy text ever since
                                 the when unknown.</p>
@@ -59,7 +59,7 @@
                     <div class="part-txt">
                         <div class="title">
                             <h4>ABOUT US</h4>
-                            <h2>We have 28+ years of experience, you can trust montion construction.</h2>
+                            <h2>We have 28+ years of experience, you can trust century construction.</h2>
                         </div>
                         <p class="b">Lorem Ipsum is simply dummy text prining and typesetting industry Lorei has been
                             the industry's standard adummy text ever since the whe printer took a galley of type and
@@ -98,7 +98,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-8">
                     <div class="heading">
-                        <h2>Montion Providing The Best Service.</h2>
+                        <h2>Century Providing The Best Service.</h2>
                     </div>
                 </div>
             </div>
