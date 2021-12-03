@@ -18,27 +18,51 @@ class Pages extends Controller
         echo view('pages/graphic_design', $data);       
     }
 
-    public function tshirt_printing()
+    public function biometric()
     {
-        $data['title'] = "Tshirt-Printing";
-        echo view('pages/tshirt_printing', $data);       
+        $data['title'] = "Biometric Systems";
+        echo view('pages/biometric', $data);       
     }
 
-    public function signages()
+    public function alarm()
     {
-        $data['title'] = "2D & 3D Signages";
-        echo view('pages/signages', $data);       
+        $data['title'] = "Alarm Systems";
+        echo view('pages/alarm', $data);       
     }
 
-    public function promotional_materials()
+    public function electrical_fence()
     {
-        $data['title'] = "Promotional Materials";
-        echo view('pages/promotional_materials', $data);       
+        $data['title'] = "Electrical Fences";
+        echo view('pages/electrical', $data);       
     }
 
-    public function banners_stickers()
+    public function computer()
     {
-        $data['title'] = "Banners and Stickers";
-        echo view('pages/banners_stickers', $data);       
+        $data['title'] = "Computer Maintenence";
+        echo view('pages/computer', $data);       
+    }
+
+    public function web_design()
+    {
+        $data['title'] = "Web Design and Hosting";
+        echo view('pages/web-design', $data);       
+    }
+
+    public function cloud()
+    {
+        $data['title'] = "Cloud Services";
+        echo view('pages/computer', $data);       
+    }
+
+    public function network()
+    {
+        $data['title'] = "Network Installation";
+        echo view('pages/network', $data);       
+    }
+
+    public function it_support()
+    {
+        $data['title'] = "IT Support";
+        echo view('pages/it-support', $data);       
     }
 }

@@ -94,15 +94,15 @@
                                             Service
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="serviceDropdown">
-                                            <a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
-											<a class="dropdown-item" href="service.html">Service Page</a>
+                                            <a class="dropdown-item" href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a>
+											<a class="dropdown-item" href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a>
+											<a class="dropdown-item" href="<?= base_url('/electrical-fence') ?>">Electrical Fence and Motor Gates</a>
+											<a class="dropdown-item" href="<?= base_url('/computer-maintenence') ?>">Computer Maintenence and Repair</a>
+											<a class="dropdown-item" href="<?= base_url('/it-support') ?>">IT Support</a>
+											<a class="dropdown-item" href="<?= base_url('/web-design') ?>">Web Design and Hosting</a>
+											<a class="dropdown-item" href="<?= base_url('/graphic-design') ?>">Graphic Design</a>
+											<a class="dropdown-item" href="<?= base_url('/cloud-services') ?>">Cloud Services</a>
+											<a class="dropdown-item" href="<?= base_url('/') ?>">Network Installation and Services</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
