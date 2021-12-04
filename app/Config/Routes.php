@@ -36,7 +36,7 @@ $routes->get('/', 'Pages::home');
 $routes->get('/graphic-design', 'Pages::graphic_design');
 $routes->get('/alarm-systems', 'Pages::alarm');
 $routes->get('/electrical-fence', 'Pages::electrical');
-$routes->get('/computer-maintenence', 'Pages::computer');
+$routes->get('/computer-maintenance', 'Pages::computer');
 $routes->get('/biometric-systems', 'Pages::biometric');
 $routes->get('/it-support', 'Pages::it_support');
 $routes->get('/web-design', 'Pages::web_design');

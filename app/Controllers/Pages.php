@@ -51,7 +51,7 @@ class Pages extends Controller
     public function cloud()
     {
         $data['title'] = "Cloud Services";
-        echo view('pages/computer', $data);       
+        echo view('pages/cloud', $data);       
     }
 
     public function network()

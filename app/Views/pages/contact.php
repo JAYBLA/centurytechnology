@@ -24,13 +24,14 @@
                     <div class="form-area">
                         <div class="title">
                             <h2>Get In Touch:</h2>
-                            <p>Lorem Ipsu is siply dmmyt the pring been thltext industry standard<br>dummy text ever
-                                sice the when an unown</p>
                         </div>
-                        <form>
-                            <input type="text" placeholder="Name:" required>
-                            <input type="email" placeholder="Email:" required>
-                            <textarea placeholder="Message..." required></textarea>
+                        <?= service('validation')->listErrors() ?>
+                        <form action="/contact" method="post">
+                        <?= csrf_field() ?>
+                            <input type="text" placeholder="Name:" required name="full_name">
+                            <input type="text" placeholder="Phone:" required name="phone">
+                            <input type="email" placeholder="Email:" required name="email">
+                            <textarea placeholder="Message..." required name="message"></textarea>
                             <button type="submit" class="def-btn">Submit Now <i
                                     class="icofont-double-right"></i></button>
                         </form>
@@ -39,17 +40,13 @@
                 <div class="col-xl-5 col-lg-6">
                     <div class="address-area">
                         <div class="single-box">
-                            <div class="title">
-                                <h3>Address-1</h3>
-                            </div>
                             <div class="details">
                                 <ul>
-                                    <li><span><i class="icofont-clock-time"></i></span>12:05 AM 07:10 PM</li>
-                                    <li><span><i class="icofont-ui-call"></i></span>+8865 6344 2988</li>
-                                    <li><span><i class="icofont-email"></i></span><a href="mailto:info@centurytechnology.co.tz">info@centurytechnology.co.tz</a>
+                                    <li><span><i class="icofont-clock-time"></i></span>08:00 AM 08:00 PM</li>
+                                    <li><span><i class="icofont-ui-call"></i></span><a href="tel:+255658120546" style="color:#666666 !important;">+255658120546</a></li>
+                                    <li><span><i class="icofont-email"></i></span><a href="mailto:info@centurytechnology.co.tz" style="color:#666666 !important;">info@centurytechnology.co.tz</a>
                                     </li>
-                                    <li><span><i class="icofont-google-map"></i></span> 5689 Tampines St 4452 Tampines,
-                                        USA.</li>
+                                    <li><span><i class="icofont-google-map"></i></span> Morogoro - Tanzania</li>
                                 </ul>
                             </div>
                         </div>

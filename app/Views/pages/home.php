@@ -7,10 +7,8 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-8 col-md-7">
                         <div class="banner-txt">
-                            <h1>Stand your <span>dream</span> building with <span>century</span> construction.</h1>
-                            <p>Lorem Ipsum is simply dmmy and text the printing & typeseng staard dummy text ever since
-                                the when unknown.</p>
-                            <a href="service.html" class="def-btn">All Services <i class="icofont-double-right"></i></a>
+                            <h1>Stand your <span>dream</span> growing with <span>Century</span> Technology.</h1>
+                            <p>Work with the best for both best experience and results. Century Technology we ensure you with all these.</p>                            
                         </div>
                     </div>
                 </div>
@@ -23,9 +21,7 @@
                         <div class="banner-txt">
                             <h1><span>Century</span> are pro in their <span>passion</span> so you can just leave it on
                                 us.</h1>
-                            <p>Lorem Ipsum is simply dmmy and text the printing & typeseng staard dummy text ever since
-                                the when unknown.</p>
-                            <a href="service.html" class="def-btn">All Services <i class="icofont-double-right"></i></a>
+                            <p>Work with the best for both best experience and results. Century Technology we ensure you with all these.</p>                            
                         </div>
                     </div>
                 </div>
@@ -37,9 +33,7 @@
                     <div class="col-xl-7 col-lg-8 col-md-7">
                         <div class="banner-txt">
                             <h1>We are <span>truthful</span> and <span>trustworthy</span>, that’s why we are best.</h1>
-                            <p>Lorem Ipsum is simply dmmy and text the printing & typeseng staard dummy text ever since
-                                the when unknown.</p>
-                            <a href="service.html" class="def-btn">All Services <i class="icofont-double-right"></i></a>
+                            <p>Work with the best for both best experience and results. Century Technology we ensure you with all these.</p>                            
                         </div>
                     </div>
                 </div>
@@ -59,11 +53,9 @@
                     <div class="part-txt">
                         <div class="title">
                             <h4>ABOUT US</h4>
-                            <h2>We have 28+ years of experience, you can trust century construction.</h2>
+                            <h2>We are experienced, you can trust Century Technology.</h2>
                         </div>
-                        <p class="b">Lorem Ipsum is simply dummy text prining and typesetting industry Lorei has been
-                            the industry's standard adummy text ever since the whe printer took a galley of type and
-                            scrambled.</p>
+                        <p class="b">Century Technology is determined to digitally transform businesses and societal lives, and subsequently improve small to large businesses.</p>
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-sm-6">
                                 <div class="single-box one">
@@ -82,10 +74,6 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorei has been the
-                            industry's standard dummy text ever since the when dumm printer took a galley of type and
-                            scrambled it tom make a our thet text in has survived not only five centuries, but also the
-                            leap</p>
                     </div>
                 </div>
             </div>
@@ -106,135 +94,117 @@
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/biometric.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/biometric-systems') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/biometric-systems') ?>" class="text-capitalize">Biometric System Installation and Service</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/alarm.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/alarm-systems') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/alarm-systems') ?>" class="text-capitalize">Alarm System Installation and Service</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/fence.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/electrical-fence') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/electrical-fence') ?>" class="text-capitalize">Electrical Fence, Motor Gates Installation and Service</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/computer.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/computer-maintenence') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/computer-maintenence') ?>" class="text-capitalize">Computer maintenance and repair</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/it-support.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/it-support') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/it-support') ?>" class="text-capitalize">IT support</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/web.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/web-design') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/web-design') ?>" class="text-capitalize">Web design and hosting</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/graphics.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/graphic-design') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/graphic-design') ?>" class="text-capitalize">Graphics and design</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/cloud.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/cloud-services') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/cloud-services') ?>" class="text-capitalize">Cloud services</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-box mt-3">
                         <div class="part-img">
-                            <img src="<?= base_url('/assets/images/service-img-1.jpg') ?>" alt="image">
+                            <img src="<?= base_url('/assets/images/services/network.jpg') ?>" alt="image">
                             <div class="overlay">
-                                <a href="service-details.html">+</a>
+                                <a href="<?= base_url('/network-installation') ?>">+</a>
                             </div>
                         </div>
                         <div class="part-txt">
-                            <a href="service-details.html">Site Construction</a>
-                            <p>Lorem Ipsu is siply dmmyt the pring<br>been thltext industry standard dummy text ever
-                                sice the when an unown</p>
+                            <a href="<?= base_url('/network-installation') ?>" class="text-capitalize">Network installation and service</a>
                         </div>
                     </div>
                 </div>

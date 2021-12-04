@@ -17,47 +17,36 @@
             </div>
         </div>
     </div>
-	<div class="contact">
-        <div class="container">
-            <div class="row no-gutters justify-content-between">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="form-area">
-                        <div class="title">
-                            <h2>Get In Touch:</h2>
-                            <p>Lorem Ipsu is siply dmmyt the pring been thltext industry standard<br>dummy text ever
-                                sice the when an unown</p>
-                        </div>
-                        <form>
-                            <input type="text" placeholder="Name:" required>
-                            <input type="email" placeholder="Email:" required>
-                            <textarea placeholder="Message..." required></textarea>
-                            <button type="submit" class="def-btn">Submit Now <i
-                                    class="icofont-double-right"></i></button>
-                        </form>
+    <!-- Services Section Start -->
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-8 p-2 mb-5 pb-5">
+                    <img class="mb-5" src="<?= base_url('/assets/images/services/biometric.jpg') ?>" alt="">
+
+                    <div class="heading">
+                       <h2>Biometric Systems</h2> 
                     </div>
+
+                    <p>
+                    A biometric system is a technological system that uses information about a person (or other biological organism) to identify that person. Biometric systems rely on specific data about unique biological traits in order to work effectively. A biometric system will involve running data through algorithms for a particular result, usually related to a positive identification of a user or other individual.
+                    </p>
                 </div>
-                <div class="col-xl-5 col-lg-6">
-                    <div class="address-area">
-                        <div class="single-box">
-                            <div class="title">
-                                <h3>Address-1</h3>
-                            </div>
-                            <div class="details">
-                                <ul>
-                                    <li><span><i class="icofont-clock-time"></i></span>12:05 AM 07:10 PM</li>
-                                    <li><span><i class="icofont-ui-call"></i></span>+8865 6344 2988</li>
-                                    <li><span><i class="icofont-email"></i></span><a href="mailto:info@centurytechnology.co.tz">info@centurytechnology.co.tz</a>
-                                    </li>
-                                    <li><span><i class="icofont-google-map"></i></span> 5689 Tampines St 4452 Tampines,
-                                        USA.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <ul class="page-nav-vertical">
+                        <li class="active"><a href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a></li>
+                        <li><a href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a></li>
+                        <li><a href="<?= base_url('/electrical-fence') ?>">Electrical Fence </br> and Motor Gates</a></li>
+                        <li><a href="<?= base_url('/computer-maintenance') ?>">Computer Maintenance </br> and Repair</a></li>
+                        <li><a href="<?= base_url('/it-support') ?>">IT Support</a></li>
+                        <li><a href="<?= base_url('/web-design') ?>">Web Design and Hosting</a></li>
+                        <li><a href="<?= base_url('/graphic-design') ?>">Graphic Design</a></li>
+                        <li><a href="<?= base_url('/cloud-services') ?>">Cloud Services</a></li>
+                        <li><a href="<?= base_url('/network-installation') ?>">Network Installation </br> and Services</a></li>
+                    </ul>					
                 </div>
             </div>
-        </div>
     </div>
+    <!-- Services Section End -->
 <?= $this->endSection() ?>
     
     

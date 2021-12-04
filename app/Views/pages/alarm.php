@@ -29,8 +29,7 @@
                     </div>
 
                     <p>
-                        Cras enim urna, interdum nec porttitor vitae, sollicitudin eu eros. Praesent eget mollis nulla, non lacinia urna. Donec sit amet neque auctor, ornare dui rutrum, condimentum justo. Duis dictum, ex accumsan eleifend eleifend, ex justo aliquam nunc, in ultrices ante quam eget massa. Sed scelerisque, odio eu tempor pulvinar, magna tortor finibus lorem, ut mattis tellus nunc ut quam. Curabitur quis ornare leo. Suspendisse bibendum nibh non turpis vestibulum pellentesque.
-
+                    No one likes to think about break-ins or burglaries in their homes or business, but the fact is that property crimes are among the most common offences committed in Tanzania. Most break-ins cost more than just money. Victims often feel violated and fearful about being in their home after an incident. Protecting your home is one of the best things you can do for yourself and your family. Other than the obvious benefit of alarm system installation, if someone breaks into your house, there are actually other valuable benefits to have home security system solution in your home. Thanks to technological advances, security system installation can do more than just keep burglars away. In fact, some security systems can control the temperature of your home, monitor your children's whereabouts, and even let the babysitter in when you're away from home. To make this happen, applications are enabled using automation devices like motion detectors, door and window sensors, and lighting and door lock controls.
                     </p>
                 </div>
                 <div class="col-lg-4">
@@ -38,7 +37,7 @@
                         <li><a href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a></li>
                         <li class="active"><a href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a></li>
                         <li><a href="<?= base_url('/electrical-fence') ?>">Electrical Fence </br> and Motor Gates</a></li>
-                        <li><a href="<?= base_url('/computer-maintenence') ?>">Computer Maintenence </br> and Repair</a></li>
+                        <li><a href="<?= base_url('/computer-maintenance') ?>">Computer Maintenance </br> and Repair</a></li>
                         <li><a href="<?= base_url('/it-support') ?>">IT Support</a></li>
                         <li><a href="<?= base_url('/web-design') ?>">Web Design and Hosting</a></li>
                         <li><a href="<?= base_url('/graphic-design') ?>">Graphic Design</a></li>

@@ -132,7 +132,7 @@
                             </div>
                             <p>       
 								<ul>                                
-									<li><span><i class="icofont-ui-call mr-2"></i></span>+8865 6344 2988</li>
+									<li><span><i class="icofont-ui-call mr-2"></i></span><a href="tel:+255658120546" style="color:#fff !important;">+255658120546</a></li>
 									<li><span><i class="icofont-email mr-2"></i></span><a href="mailto:info@centurytechnology.co.tz" style="color:#fff !important;">info@centurytechnology.co.tz
 								</a>
 									</li>
