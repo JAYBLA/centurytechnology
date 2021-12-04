@@ -154,30 +154,30 @@
 							<div class="row">
 								<div class="col-sm-6 mb-2">
 									<ul>
-										<li><a href="service-details.html"><span><i class="icofont-double-right"></i></span>Biometric Systems</a></li>
+										<li><a href="<?= base_url('/biometric-systems') ?>"><span><i class="icofont-double-right"></i></span>Biometric Systems</a></li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/alarm-systems') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Alarm Systems
 											</a>
 										</li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/electrical-fence') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Electrical Fence and Motor gates
 											</a>
 										</li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/computer-maintenance') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Computer Maintenance and Repair
 											</a>
 										</li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/it-support') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											IT Support
@@ -188,28 +188,28 @@
 								<div class="col-sm-6">
 									<ul>										
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/web-design') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Web Design and Hosting
 											</a>
 										</li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/graphic-design') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Graphic Designing
 											</a>
 										</li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/cloud-services') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Cloud services
 											</a>
 										</li>
 										<li>
-											<a href="service-details.html">
+											<a href="<?= base_url('/network-installation') ?>">
 												<span><i class="icofont-double-right"></i>
 											</span>
 											Network Installation and Service
