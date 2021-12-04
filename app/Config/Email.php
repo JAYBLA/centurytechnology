@@ -47,21 +47,21 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost = 'mail.rareconsultancy.co.tz';
+    public $SMTPHost = 'mail.centurytechnology.co.tz';
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = 'info@rareconsultancy.co.tz';
+    public $SMTPUser = 'info@centurytechnology.co.tz';
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = 'bugalama@91,.';
+    public $SMTPPass = 'centurytechnology@2021';
 
     /**
      * SMTP Port

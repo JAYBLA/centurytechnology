@@ -152,7 +152,7 @@
                         <div class="footer-service">
                             <h3 class="title">Services</h3>
 							<div class="row">
-								<div class="col-6">
+								<div class="col-sm-6 mb-2">
 									<ul>
 										<li><a href="service-details.html"><span><i class="icofont-double-right"></i></span>Biometric Systems</a></li>
 										<li>
@@ -185,7 +185,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-6">
+								<div class="col-sm-6">
 									<ul>										
 										<li>
 											<a href="service-details.html">
@@ -227,7 +227,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6 col-md-6">
-                        <p>&copy; Century <script>document.write(new Date().getFullYear())</script>, All Right Reserved || Developed by <a target="_blank" href="https://bafrocodes.co.tz" style="color:#e62327;">BafroCodes</a></p>
+                        <p>&copy; Century <script>document.write(new Date().getFullYear())</script> || Developed by <a target="_blank" href="https://bafrocodes.co.tz" style="color:#ffffff;">BafroCodes</a></p>
                     </div>
                 </div>
             </div>
