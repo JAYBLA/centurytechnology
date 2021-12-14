@@ -95,8 +95,8 @@ span {
     z-index: 99;
 }
 .preloader .loader {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 .preloader .loader img {
     width: 100%;
