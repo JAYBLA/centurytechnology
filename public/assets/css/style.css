@@ -306,9 +306,9 @@ span {
     content: "";
     position: absolute;
     top: -50px;
-    left: 0;
-    right: 0;
-    bottom: -19px;
+    left: -3px;
+    right: -3px;
+    bottom: -10px;
     background: #fff;
     border-radius: 0 0 12px 10px;
     -webkit-transform: skewY(15.5deg);
@@ -750,7 +750,7 @@ span {
     margin-bottom: 15px;
 }
 .banner .slider .banner-txt h1 span {
-    color: #e62327;
+    color: #ff2024;
 }
 .banner .slider .banner-txt p {
     font-size: 20px;

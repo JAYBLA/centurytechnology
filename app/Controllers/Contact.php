@@ -18,7 +18,7 @@ class Contact extends Controller
         if ($this->request->getMethod() === 'post' && $this->validate([
             'full_name' => 'required|min_length[3]|max_length[180]',
             'email'  => 'required|max_length[30]',
-            'phone' => 'required|max_length[13]',
+            'phone' => 'required|numeric|max_length[13]',
             'message' => 'required'
         ])) {
             $model->save([

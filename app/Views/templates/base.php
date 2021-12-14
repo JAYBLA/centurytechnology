@@ -26,7 +26,11 @@
 
     <link rel="stylesheet" href="<?= base_url('/assets/css/style.css') ?>">
 
-    <link rel="stylesheet" href="<?= base_url('/assets/css/custom.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('/assets/css/custom.css') ?>">    
+
+    <link href="<?= base_url('/assets/dist/hc-offcanvas-nav.css') ?>" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
 <body>
@@ -36,7 +40,7 @@
     </div>
 
 <div class="main-content">
-    <div class="header">
+    <div class="header d-none d-lg-block">
         <div class="top-header">
             <div class="container">
                 <div class="row">
@@ -81,7 +85,7 @@
                     </div>
                     <div class="col-xl-9 col-lg-9 next">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse mobile-menu" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
                                         <a class="nav-link" href="/">
@@ -91,13 +95,13 @@
                                     <li class="nav-item dropdown">
                                         <a class="nav-link" href="#" id="serviceDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Service
+                                            Service <span><i class="icofont-simple-down"></i></span>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="serviceDropdown">
                                             <a class="dropdown-item" href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a>
 											<a class="dropdown-item" href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a>
 											<a class="dropdown-item" href="<?= base_url('/electrical-fence') ?>">Electrical Fence </br> and Motor Gates</a>
-											<a class="dropdown-item" href="<?= base_url('/computer-maintenence') ?>">Computer Maintenence </br> and Repair</a>
+											<a class="dropdown-item" href="<?= base_url('/computer-maintenance') ?>">Computer Maintenence </br> and Repair</a>
 											<a class="dropdown-item" href="<?= base_url('/it-support') ?>">IT Support</a>
 											<a class="dropdown-item" href="<?= base_url('/web-design') ?>">Web Design and Hosting</a>
 											<a class="dropdown-item" href="<?= base_url('/graphic-design') ?>">Graphic Design</a>
@@ -116,6 +120,44 @@
             </div>
         </div>
     </div>
+
+        <!-- Mobile menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray d-lg-none fixed-top shadow">
+        <div class="col-6">
+            <a class="navbar-brand" href="/">
+                <img src="<?= base_url('/assets/images/logo.png') ?>" alt="LOGO">
+            </a>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <button class="century-mobile-toggle border-0" type="button">
+                <span class="navbar-toggler-icon text-danger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <nav id="century-mobile-navigation" class="d-lg-none">
+        <ul>
+            <li><a href="/">Home</a></li>            
+            <li>
+            <a href="#">Services</a>
+            <ul>
+                <li><a href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a></li>
+                <li><a href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a></li>
+                <li><a href="<?= base_url('/electrical-fence') ?>">Electrical Fence and Motor Gates</a></li>
+                <li><a href="<?= base_url('/computer-maintenance') ?>">Computer Maintenence and Repair</a></li>
+                <li><a href="<?= base_url('/it-support') ?>">IT Support</a></li>
+                <li><a href="<?= base_url('/web-design') ?>">Web Design and Hosting</a></li>
+                <li><a href="<?= base_url('/graphic-design') ?>">Graphic Design</a></li>
+                <li><a href="<?= base_url('/cloud-services') ?>">Cloud Services</a></li>
+                <li><a href="<?= base_url('/network-installation') ?>">Network Installation and Services</a></li>
+            </ul>
+            </li>
+            <li><a href="<?= base_url('/contact') ?>">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
 
 	<?= $this->renderSection('content') ?>
 
@@ -227,12 +269,16 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-6 col-md-6">
-                        <p>&copy; Century <script>document.write(new Date().getFullYear())</script> || Developed by <a target="_blank" href="https://bafrocodes.co.tz" style="color:#ffffff;">BafroCodes</a></p>
+                        <p>&copy;  <script>document.write(new Date().getFullYear())</script> Century Technology</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Back to top button -->
+    <a id="century-back-top-button"></a>
+    
     </script>
     <script src="<?= base_url('/assets/js/jquery-3.6.0.min.js') ?>"></script>
 
@@ -255,6 +301,36 @@
     <script src="<?= base_url('/assets/js/bootstrap.min.js') ?>"></script>
 
     <script src="<?= base_url('/assets/js/main.js') ?>"></script>
+    
+    <script src="<?= base_url('/assets/dist/hc-offcanvas-nav.js') ?>"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('#century-mobile-navigation').hcOffcanvasNav({
+                disableAt: 1024,
+                customToggle: $('.toggle'),
+                navTitle: 'Back',
+                levelTitleAsBack: true,
+                customToggle: '.century-mobile-toggle',
+            });
+        });
+    </script>
+    <script>
+        var btn = $('#century-back-top-button');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 500) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '500');
+        });
+    </script>
 </body>
 
 </html>

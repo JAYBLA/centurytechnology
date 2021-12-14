@@ -20,7 +20,7 @@
     <!-- Services Section Start -->
     <div class="container">
             <div class="row">
-                <div class="col-lg-8 p-2 mb-5 pb-5">
+                <div class="col-lg-8 p-2 mb-5 pb-5 col-sm-12">
                     <img class="mb-5" src="<?= base_url('/assets/images/services/computer.jpg') ?>" alt="">
 
                     <div class="heading">
@@ -31,7 +31,7 @@
                     It’s easy to forget, but it’s important to remember that electronics require ongoing maintenance. Without regular maintenance efforts your businesses’ computer equipment won’t last as long and will require replacement rather than repair. To ensure that your computers function properly and allow for optimal productivity, make sure you maintain regularly.
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-none d-lg-block">
                     <ul class="page-nav-vertical">
                         <li><a href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a></li>
                         <li><a href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a></li>

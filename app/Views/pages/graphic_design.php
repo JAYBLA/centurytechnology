@@ -20,7 +20,7 @@
     <!-- Services Section Start -->
     <div class="container">
             <div class="row">
-                <div class="col-lg-8 p-2 mb-5 pb-5">
+                <div class="col-lg-8 p-2 mb-5 pb-5 col-sm-12">
                     <img class="mb-5" src="<?= base_url('/assets/images/services/graphics.jpg') ?>" alt="">
 
                     <div class="heading">
@@ -32,7 +32,7 @@
                     Century Technology will provide with almost all graphic design needs such as Logo design, Posters, Brochures, Flyers, Brand Identity and so much more!
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-none d-lg-block">
                     <ul class="page-nav-vertical">
                         <li><a href="<?= base_url('/biometric-systems') ?>">Biometric Systems</a></li>
                         <li><a href="<?= base_url('/alarm-systems') ?>">Alarm Systems</a></li>

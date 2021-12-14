@@ -46,7 +46,7 @@
             <div class="row justify-content-md-center">
                 <div class="col-xl-6 col-lg-5 col-md-8 d-xl-flex d-lg-flex align-items-center justify-content-end">
                     <div class="part-img">
-                        <img src="<?= base_url('/assets/images/about-img.png') ?>" alt="image">
+                        <img src="<?= base_url('/assets/images/about-image.png') ?>" alt="image">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-10 d-xl-flex d-lg-flex align-items-center">

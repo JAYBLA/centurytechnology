@@ -45,9 +45,12 @@ $routes->get('/network-installation', 'Pages::network');
 $routes->get('contact', 'Contact::index');
 
 
+$routes->get('/signup', 'SignupController::index');
+$routes->get('/signin', 'SigninController::index');
 
-$routes->get('admin', 'Dashboard::index');
+$routes->get('admin', 'Dashboard::index', ['filter' => 'authGuard']);
 $routes->get('admin/post-create', 'Dashboard::create_post');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
