@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?=$title?> | CenturyTechnology</title>
 
-        <link rel="shortcut icon" href="<?= base_url('/favicon.png" type="image/x-icon') ?>">
+        <link rel="icon" href="<?=base_url('/favicon.gif')?>" type="image/gif">
 
         <link rel="stylesheet" href="<?= base_url('/assets/css/animate.css') ?>">
 
