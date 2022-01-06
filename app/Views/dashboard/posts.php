@@ -21,8 +21,7 @@
                                 <thead>
                                     <tr>
                                         <th>S/N</th>
-                                        <th>Title</th>
-                                        <th width="800px" class="text-center">Content</th>
+                                        <th>Title</th>                                        
                                         <th>Posted On</th>                                   
                                         <th width="280px" class="text-center">Action</th>
                                     </tr>
@@ -32,8 +31,7 @@
                                         <?php foreach($posts as $posts_item): ?>
                                             <tr id="<?= $row['id']; ?>">
                                                 <td><?= $count++ +1; ?></td>
-                                                <td><?= esc($posts_item['title']) ?></td>
-                                                <td><?= esc($posts_item['body']) ?></td>                                                 
+                                                <td><?= esc($posts_item['title']) ?></td>                                                                                                 
                                                 <td><?= date('Y-m-d', strtotime(esc($posts_item['created_at']))) ?></td>
                                                 <td class="text-center">
                                                 <a href="/dashboard/posts/<?= esc($posts_item['slug'], 'url') ?>"><i class="fa fs-22 fa-edit text-info"></i></a>

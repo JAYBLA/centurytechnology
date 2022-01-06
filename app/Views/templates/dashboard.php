@@ -47,7 +47,7 @@
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto mr-5">
-        <a href="<?= base_url('admin/logout') ?>" class="btn btn-outline-secondary">Logout</a>
+        <a href="<?= base_url('dashboard/logout') ?>" class="btn btn-outline-secondary">Logout</a>
     </ul>
   </nav>
   <!-- /.navbar -->
