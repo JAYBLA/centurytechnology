@@ -22,18 +22,18 @@ class Contact extends Controller
             'message' => 'required'
         ])) {
             $model->save([
-                'full_name' => $this->request->getPost('full_name'),
+                'name' => $this->request->getPost('full_name'),
                 'email' => $this->request->getPost('email'),
                 'phone' => $this->request->getPost('phone'),
                 'message' => $this->request->getPost('message'),                
             ]);
           
-            $to = "rareconsultancy28@gmail.com";
+            $to = "info@centurytechnology.co.tz";
             $subject = "Contact Form";
             $message = $this->request->getPost('message');
     
             $email->setTo($to);
-            $email->setFrom('bugalama28@gmail.com');
+            $email->setFrom('contact@centurytechnology.co.tz');
             
             $email->setSubject($subject);
             $email->setMessage($message);

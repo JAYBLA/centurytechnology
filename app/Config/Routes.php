@@ -42,14 +42,16 @@ $routes->get('/it-support', 'Pages::it_support');
 $routes->get('/web-design', 'Pages::web_design');
 $routes->get('/cloud-services', 'Pages::cloud');
 $routes->get('/network-installation', 'Pages::network');
-$routes->get('contact', 'Contact::index');
+$routes->get('/contact', 'Contact::index');
 
 
-$routes->get('/signup', 'SignupController::index');
-$routes->get('/signin', 'SigninController::index');
 
-$routes->get('admin', 'Dashboard::index', ['filter' => 'authGuard']);
-$routes->get('admin/post-create', 'Dashboard::create_post');
+$routes->match(['get', 'post'], '/dashboard/post-create', 'Posts::create');
+$routes->get('/dashboard/posts/(:segment)', 'Posts::view/$1');
+$routes->get('/dashboard/post-delete/(:segment)', 'Posts::delete/$1');
+$routes->post('/dashboard/post-update', 'Posts::update');
+$routes->get('/dashboard/posts', 'Posts::index');
+
 
 /*
  * --------------------------------------------------------------------
