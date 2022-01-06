@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Dashboard | SignUp</title>
+    <link rel="stylesheet" href="<?= base_url('admin/assets/css/custom.css') ?>">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <div class="row d-flex align-items-center justify-content-center vh-100">
             <div class="col-5 ">
                 <div class="card">
-                    <div class="card-header"><h2>Register User</h2></div>
+                    <div class="card-header card-header-company"><h2>Register User</h2></div>
                     <div class="card-body">
                         <?php if(isset($validation)):?>
                             <div class="alert alert-warning">
@@ -41,7 +42,7 @@
                             </div>
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Signup</button>
+                                <button type="submit" class="btn btn-company">Signup</button>
                             </div>
                         </form>
                     </div>

@@ -6,13 +6,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Dashboard | Login</title>
+    <link rel="stylesheet" href="<?= base_url('admin/assets/css/custom.css') ?>">
   </head>
   <body>
     <div class="container">
         <div class="row d-flex align-items-center justify-content-center vh-100">
             <div class="col-5 ">
                 <div class="card">
-                    <div class="card-header"><h2>Login in</h2></div>
+                    <div class="card-header card-header-company"><h2>Login in</h2></div>
                     <div class="card-body">
                         <?php if(session()->getFlashdata('msg')):?>
                             <div class="alert alert-warning">
@@ -31,7 +32,7 @@
                             </div>
                             
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-success">Signin</button>
+                                <button type="submit" class="btn btn-company">Signin</button>
                             </div>     
                         </form>
                     </div>

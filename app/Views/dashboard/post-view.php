@@ -6,8 +6,8 @@
 
 <?= $this->section('content') ?>
             <div class="col-8 offset-2">                           
-                <div class="card card-primary">
-                    <div class="card-header">
+                <div class="card mt-3">
+                    <div class="card-header card-header-company">
                         <h3 class="card-title">Update A Post</h3>
                     </div>
                     <?= session()->getFlashdata('error') ?>
@@ -27,7 +27,7 @@
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-company">Submit</button>
                         </div>
                     </form>
                 </div>

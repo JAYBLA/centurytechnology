@@ -1,3 +1,14 @@
 .fs-22{
     font-size: 22px !important;
 }
+
+.btn-company {
+    color: #fff;
+    background-color: #e62327;
+    border-color: #e62327;
+}
+
+.card-header-company {
+    background-color: rgba(230, 35, 39, 0.03);
+    border-bottom: 1px solid rgba(230, 35, 39, 0.125);
+}

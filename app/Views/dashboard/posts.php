@@ -10,8 +10,8 @@
 
 <?= $this->section('content') ?>
             <div class="col-12 tinymce">
-                <div class="card">
-                    <div class="card-header bg-primary">
+                <div class="card mt-3">
+                    <div class="card-header card-header-company">
                         <h4>Posts List                            
                         </h4>
                     </div>
