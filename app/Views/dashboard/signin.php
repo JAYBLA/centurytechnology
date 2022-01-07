@@ -13,7 +13,7 @@
         <div class="row d-flex align-items-center justify-content-center vh-100">
             <div class="col-5 ">
                 <div class="card">
-                    <div class="card-header card-header-company"><h2>Login in</h2></div>
+                    <div class="card-header card-header-company"><h2>Login</h2></div>
                     <div class="card-body">
                         <?php if(session()->getFlashdata('msg')):?>
                             <div class="alert alert-warning">
