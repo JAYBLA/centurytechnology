@@ -33,9 +33,10 @@
                                 <span><?= date('Y-m-d', strtotime($posts_item['created_at'])) ?></span>
                             </div>
                         </div>
-                        <a href="/articles/<?= $posts_item['slug'], 'url' ?>"><?= esc($posts_item['title']) ?></a>
+                        <a href="/articles/<?= $posts_item['slug'] ?>"><?= esc($posts_item['title']) ?></a>
                         <p><?= character_limiter($posts_item['body'], 180) ?></p>
                     </div>
+                    <p class="ml-5 pb-3"><a href="/articles/<?= $posts_item['slug'] ?>"><i class="fa fa-plus"></i> Read More...</a></p>
                 </div>
             </div>
             <?php endforeach; ?>
@@ -46,9 +47,9 @@
                     <?php if ($pager) :?>
                     <?php $pagi_path='/articles'; ?>
                     <?php $pager->setPath($pagi_path); ?>
-                        <ul>
-                              <li><?= $pager->links() ?></li>
-                        </ul>
+                    <ul>
+                        <li><?= $pager->links() ?></li>
+                    </ul>
                     <?php endif ?>
                 </div>
 
