@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\ContactModel;
+
 use CodeIgniter\Controller;
+use App\Models\ContactModel;
+use App\Models\PostsModel;
 
 class Pages extends Controller
 {
@@ -64,5 +66,36 @@ class Pages extends Controller
     {
         $data['title'] = "IT Support";
         echo view('pages/it-support', $data);       
+    }
+
+    public function articles()
+    {  
+
+        helper('text');
+        
+        $model = model(PostsModel::class);
+
+        $data = [
+            'posts'  => $model->paginate(6),
+            'pager' => $model->pager,
+            'title' => 'News and Articles',
+        ];
+        echo view('pages/articles', $data);       
+    }
+
+    
+    public function article_detail($slug = null)
+    {  
+        $model = model(PostsModel::class);
+
+        $data['posts'] = $model->getPosts($slug);
+
+        if (empty($data['posts'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find that post: ' . $slug);
+        }
+    
+        $data['title'] = $data['posts']['title']; 
+
+        echo view('pages/article-detail', $data);       
     }
 }

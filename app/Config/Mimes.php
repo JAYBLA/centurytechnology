@@ -198,7 +198,7 @@ class Mimes
         'gif' => 'image/gif',
         'jpg' => [
             'image/jpeg',
-            'image/pjpeg',
+            'image/pjpeg',            
         ],
         'jpeg' => [
             'image/jpeg',

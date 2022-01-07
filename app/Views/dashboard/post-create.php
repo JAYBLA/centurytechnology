@@ -16,17 +16,20 @@
                     </div>
                     <?= session()->getFlashdata('error') ?>
                     <?= service('validation')->listErrors() ?>
-                    <form action="<?= base_url('/dashboard/post-create') ?>" method="post">
+                    <form action="<?= base_url('/dashboard/post-create') ?>" method="post" enctype="multipart/form-data">
                         <?= csrf_field() ?>
                         <div class="card-body">
-                        <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="input" class="form-control" name="title" />                    
-                        </div>
-                        <div class="form-group">
-                                <label for="body">Text</label>
-                                <textarea name="body" class="form-control" ></textarea><br />
-                        </div>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="input" class="form-control" name="title" />                    
+                            </div>
+                            <div class="form-group">
+                                    <label for="body">Text</label>
+                                    <textarea name="body" class="form-control" ></textarea><br />
+                            </div>
+                            <div class="form-group mb-3">
+                                <input name="featured_image" type="file" class="form-control" accept="image/*">
+                            </div>
                         </div>
                         <!-- /.card-body -->
 

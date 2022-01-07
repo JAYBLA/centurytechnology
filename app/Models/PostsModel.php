@@ -8,7 +8,7 @@ class PostsModel extends Model
 {
     protected $table = 'posts';
 
-    protected $allowedFields = ['title', 'slug', 'body', 'created_at'];
+    protected $allowedFields = ['title', 'slug', 'body', 'file_name', 'file_type', 'created_at'];
 
     public function getPosts($slug = false)
     {

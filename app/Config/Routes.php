@@ -44,6 +44,8 @@ $routes->get('/it-support', 'Pages::it_support');
 $routes->get('/web-design', 'Pages::web_design');
 $routes->get('/cloud-services', 'Pages::cloud');
 $routes->get('/network-installation', 'Pages::network');
+$routes->get('/articles', 'Pages::articles');
+$routes->get('/articles/(:segment)', 'Pages::article_detail/$1');
 $routes->get('/contact', 'Contact::index');
 
 // User Management
@@ -59,7 +61,7 @@ $routes->match(['get', 'post'], '/dashboard/post-create', 'Posts::create', ['fil
 $routes->get('/dashboard/posts/(:segment)', 'Posts::view/$1');
 $routes->get('/dashboard/post-delete/(:segment)', 'Posts::delete/$1');
 $routes->post('/dashboard/post-update', 'Posts::update');
-$routes->get('/dashboard/posts', 'Posts::index', ['filter' => 'authGuard']);
+$routes->get('/dashboard', 'Posts::index', ['filter' => 'authGuard']);
 
 
 /*
