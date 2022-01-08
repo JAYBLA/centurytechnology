@@ -39,7 +39,7 @@ class Posts extends BaseController
 
         if ($this->request->getMethod() === 'post' && $this->validate([
             'title' => 'required|min_length[3]|max_length[255]',
-            'body'  => 'required',
+            'content'  => 'required',
             "featured_image" => [
                 "rules" => "uploaded[featured_image]|max_size[featured_image,1024]|is_image[featured_image]|mime_in[featured_image,image/jpg,image/jpeg,image/gif,image/png]",
                 "label" => "Profile Image",
@@ -52,7 +52,7 @@ class Posts extends BaseController
             $model->save([
                 'title' => $this->request->getPost('title'),
                 'slug'  => url_title($this->request->getPost('title'), '-', true),
-                'body'  => $this->request->getPost('body'),
+                'body'  => $this->request->getPost('content'),
                 'file_name' =>  $imageFile->getName(),
                 'file_type'  => $imageFile->getClientMimeType(),
             ]);
@@ -70,7 +70,7 @@ class Posts extends BaseController
 
         $data= [
             'title' => $this->request->getPost('title'),            
-            'body'  => $this->request->getPost('body'),
+            'body'  => $this->request->getPost('content'),
         ];
 
         $model->update($id, $data);            

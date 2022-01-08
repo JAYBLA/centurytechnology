@@ -16,14 +16,18 @@
                         <?= csrf_field() ?>
                         <input type="hidden" name="id" id="id" value="<?= esc($posts['id']) ?>">
                         <div class="card-body">
-                        <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="input" class="form-control" name="title" value="<?= esc($posts['title']) ?>"/>                    
-                        </div>
-                        <div class="form-group">
-                                <label for="body">Text</label>                                
-                                <textarea name="body" class="form-control" ><?= esc($posts['body']) ?></textarea>
-                        </div>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="input" class="form-control" name="title" value="<?= $posts['title'] ?>"/>                    
+                            </div>
+                            <div class="form-group">
+                                    <label for="content">Text</label>                                
+                                    <textarea name="content" id="content" class="form-control" ><?= $posts['body'] ?></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="featured_image">Featured Image</label>
+                                <input name="featured_image" type="file" class="form-control" value="<?= $posts['file_name'] ?>" accept="image/*" />
+                            </div>
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
@@ -35,7 +39,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('javascript') ?>
-    <script>
+    <!-- <script>
         CKEDITOR.replace( 'body' );
-    </script>
+    </script> -->
 <?= $this->endSection() ?>

@@ -34,9 +34,9 @@
                                     <td><?= $posts_item['title'] ?></td>
                                     <td><?= date('Y-m-d', strtotime($posts_item['created_at'])) ?></td>
                                     <td class="text-center">
-                                        <a href="/dashboard/posts/<?= $posts_item['slug'], 'url' ?>"><i
+                                        <a href="/dashboard/posts/<?= $posts_item['slug'] ?>"><i
                                                 class="fa fs-22 fa-edit text-info"></i></a>
-                                        <a href="/dashboard/post-delete/<?= $posts_item['slug'], 'url' ?>"><i
+                                        <a href="/dashboard/post-delete/<?= $posts_item['slug'] ?>"><i
                                                 class="fa fs-22 fa-trash text-danger"></i></a>
                                     </td>
                                 </tr>

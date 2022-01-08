@@ -25,9 +25,10 @@
                             </div>
                             <div class="form-group">
                                     <label for="body">Text</label>
-                                    <textarea name="body" class="form-control" ></textarea><br />
+                                    <textarea id="content" name="content" class="form-control" ></textarea><br />
                             </div>
                             <div class="form-group mb-3">
+                                <label for="featured_image">Featured Image</label>
                                 <input name="featured_image" type="file" class="form-control" accept="image/*">
                             </div>
                         </div>
@@ -42,7 +43,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('javascript') ?>
-    <script>
-        CKEDITOR.replace( 'body');
-    </script>
+
 <?= $this->endSection() ?>
