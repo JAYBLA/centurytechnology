@@ -22,13 +22,13 @@ class Posts extends BaseController
     {
         $model = model(PostsModel::class);
 
-        $data['posts'] = $model->getPosts($slug);
+        $data['post'] = $model->getPosts($slug);
 
-        if (empty($data['posts'])) {
+        if (empty($data['post'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find that post: ' . $slug);
         }
     
-        $data['title'] = $data['posts']['title'];    
+        $data['title'] = $data['post']['title'];    
         
         echo view('dashboard/post-view', $data);        
     }
@@ -45,15 +45,15 @@ class Posts extends BaseController
                 "label" => "Profile Image",
               ],
         ])) {
-
             $imageFile = $this->request->getFile('featured_image');
-            $imageFile->move(ROOTPATH . 'public/uploads');
+            $file_name = $imageFile->getRandomName();
+            $imageFile->move(ROOTPATH . 'public/uploads', $file_name);
 
             $model->save([
                 'title' => $this->request->getPost('title'),
                 'slug'  => url_title($this->request->getPost('title'), '-', true),
                 'body'  => $this->request->getPost('content'),
-                'file_name' =>  $imageFile->getName(),
+                'file_name' =>  $file_name,
                 'file_type'  => $imageFile->getClientMimeType(),
             ]);
 
@@ -63,14 +63,30 @@ class Posts extends BaseController
         }
     }
 
-    public function update()
+    public function update($slug = null)
     {
         $model = model(PostsModel::class);
-        $id = $this->request->getVar('id');
+
+        $id = $this->request->getPost('id');
+        $post = $model->getPosts($slug);
+        
+
+        $imageFile = $this->request->getFile('featured_image');  
+
+        if($imageFile->isValid() && !$imageFile->hasMoved()){
+            $old_image = $post['file_name'];
+            if(file_exists("public/uploads". $old_image)){
+                unlink("public/uploads". $old_image);                
+            }
+            $file_name = $imageFile->getRandomName();
+            $imageFile->move(ROOTPATH . 'public/uploads', $file_name);
+        }
 
         $data= [
             'title' => $this->request->getPost('title'),            
             'body'  => $this->request->getPost('content'),
+            'file_name' =>  $file_name,
+            'file_type'  => $imageFile->getClientMimeType(),
         ];
 
         $model->update($id, $data);            

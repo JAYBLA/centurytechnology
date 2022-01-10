@@ -76,7 +76,7 @@ class Pages extends Controller
         $model = model(PostsModel::class);
 
         $data = [
-            'posts'  => $model->paginate(6),
+            'posts'  => $model->orderBy('id', 'DESC')->paginate(6),
             'pager' => $model->pager,
             'title' => 'News and Articles',
         ];

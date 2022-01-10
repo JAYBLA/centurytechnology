@@ -60,7 +60,7 @@ $routes->get('dashboard/logout', 'SigninController::logout');
 $routes->match(['get', 'post'], '/dashboard/post-create', 'Posts::create', ['filter' => 'authGuard']);
 $routes->get('/dashboard/posts/(:segment)', 'Posts::view/$1');
 $routes->get('/dashboard/post-delete/(:segment)', 'Posts::delete/$1');
-$routes->post('/dashboard/post-update', 'Posts::update');
+$routes->post('/dashboard/post-update/(:segment)', 'Posts::update/$1');
 $routes->get('/dashboard', 'Posts::index', ['filter' => 'authGuard']);
 
 

@@ -820,28 +820,7 @@ span {
 .about {
     padding: 120px 0;
 }
-.about.about-2 .part-txt h4 {
-    margin-bottom: 25px;
-}
-.about.about-2 .part-txt h2 {
-    margin-bottom: 6px;
-}
-.about.about-2 .part-txt h2 span {
-    font-size: 60px;
-    color: #e62327;
-}
-.about.about-2 .part-txt p {
-    margin-bottom: 13px;
-}
-.about.about-2 .part-txt .def-btn {
-    margin-top: 17px;
-}
-.about.about-2 .part-img {
-    padding-right: 0;
-}
-.about.about-2 .part-img img {
-    max-width: 100%;
-}
+
 .about .part-img {
     padding-right: 70px;
     display: -webkit-box;
@@ -856,7 +835,6 @@ span {
     justify-content: flex-end;
 }
 .about .part-img img {
-    max-width: inherit;
     width: auto;
 }
 .about .part-txt h4 {

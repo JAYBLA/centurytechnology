@@ -13,7 +13,7 @@ class PostsModel extends Model
     public function getPosts($slug = false)
     {
         if ($slug === false) {
-            return $this->findAll();
+            return $this->orderBy('id', 'DESC')->findAll();
         }
 
         return $this->where(['slug' => $slug])->first();

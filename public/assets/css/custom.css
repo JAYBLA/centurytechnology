@@ -217,7 +217,7 @@
 }
 .blog .single-box {
     position: relative;
-    z-index: 2;
+    z-index: 2;    
 }
 .blog .single-box:before {
     content: "";
@@ -247,6 +247,7 @@
 .blog .single-box .part-img {
     border-radius: 10px;
     overflow: hidden;
+    height: 200px !important;
 }
 .blog .single-box .part-txt {
     padding: 40px;
