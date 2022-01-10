@@ -33,8 +33,8 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
+		'username' => 'centuryt_centuryt',
+		'password' => 'bugalama@91,.',
 		'database' => 'centuryt_main',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
